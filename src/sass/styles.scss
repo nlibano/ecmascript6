@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+@import 'colors';
+@import 'keyframes';
+
+@import 'weather/content';
+@import 'weather/cloud';
+@import 'weather/sun';
+
+
+body {
+    background-color: lighten($color1, 10%);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+

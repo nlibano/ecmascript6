@@ -1,0 +1,65 @@
+.weather-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weather-card {
+    margin: 20px 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    background-color: $color2;
+    box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+    animation: appear 500ms ease-out forwards;
+    h1 {
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 80px;
+        color: $color3;
+        bottom: 35px;
+        left: 25px;
+        opacity: 0;
+        transform: translateX(150px);
+        animation: title-appear 500ms ease-out 500ms forwards;
+    }
+    p {
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        color: lighten($color3, 10%);
+        bottom: 0;
+        left: 35px;
+        animation: title-appear 1s ease-out 500ms forwards;
+    }
+
+    button {
+        border: none;
+        background: transparent;
+        color: $color3;
+        font-size: 3em;
+        position: absolute;
+        right: 5px;
+        top: -10px;
+        &:hover{
+            color: lighten($color-rosa, 10%);
+        }
+    }
+}
+
+.weather-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    float: right;
+    margin: 40px 40px 0 0;
+    animation: weather-icon-move 5s ease-in-out infinite;
+}
+

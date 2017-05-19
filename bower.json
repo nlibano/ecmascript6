@@ -1,0 +1,21 @@
+{
+  "name": "ecmascript6",
+  "description": "Aprender ECMAScript 6 o 2015",
+  "main": "index.js",
+  "authors": [
+    "nlibano"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "https://github.com/FortAwesome/Font-Awesome.git#^4.7.0"
+  }
+}

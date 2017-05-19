@@ -1,0 +1,6 @@
+.sun {
+    background: $color4;
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 0, 0.1) 0 0 0 4px;
+    animation: light 800ms ease-in-out infinite alternate, weather-icon-move 5s ease-in-out infinite;
+}

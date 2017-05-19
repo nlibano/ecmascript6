@@ -15,19 +15,27 @@
 
         <h1><i class="fa fa-html5" aria-hidden="true"></i>&nbsp;ECMAScript 6 o 2015</h1>
 
-        <div class="weather-wrapper">
-
+        <div id="wrapper" class="weather-wrapper">
+            <!--
             <div id="widget-bilbao" class="weather-card london">
                 <button onclick="cerrar()">x</button>
                 <div class="weather-icon"></div>
                 <h1>Xº</h1>
                 <p>cargando...</p>
             </div>
+-->
         </div>
 
     </div>
 
-    <script src="dist/js/main.js"></script>
+    <!-- <script src="dist/js/main.js"></script> -->
+    <script src="dist/js/widget.js"></script>
+
+    <script>
+        var widgetBilbao = new Widget('bilbao', 'wrapper');
+        var widgetMadrid = new Widget('madrid', 'wrapper');
+        var widgetLondres = new Widget('london', 'wrapper');
+    </script>
 
 </body>
 </html>

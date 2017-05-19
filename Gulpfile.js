@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 const babel = require('gulp-babel');
 
 gulp.task('babelfy', () => {
-    return gulp.src('src/js/main.js')
+    return gulp.src('src/js/**/*.js')
         .pipe(babel({
             presets: ['es2015']
         }))
@@ -21,7 +21,3 @@ gulp.task('default', () => {
     gulp.watch('src/sass/**/*.scss', ['sass']);
     gulp.watch('src/js/**/*.js',['babelfy']);
 });
-
-
-
-
